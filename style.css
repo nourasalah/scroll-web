@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    z-index: 10;
+
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background-color: white;
+    color: rgb(146, 24, 105);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main::after{
+    content:'';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top,#200016,transparent );
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+    overflow: hidden;
+    
+}
+.nouvil{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2 ,p{
+    font-size: 30px;
+    margin: 20px;
+}
